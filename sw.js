@@ -1,6 +1,6 @@
 self.addEventListener('install', (event)=>{
   event.waitUntil(
-    caches.open('pwdreset-demo-v1').then(cache=>cache.addAll([
+    caches.open('pwdreset-demo-otp-v2').then(cache=>cache.addAll([
       './',
       './index.html',
       './styles.css',
