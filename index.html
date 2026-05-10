@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Password Reset Assistant (Concept Demo)</title>
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#005AAA" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="dot"></div>
+      <div>
+        <div class="title">Password Reset Assistant</div>
+        <div class="subtitle">Conceptual AI Agent demo — decision-aware, not executing</div>
+      </div>
+    </div>
+    <div class="controls">
+      <label class="toggle">
+        <input id="modeToggle" type="checkbox" />
+        <span>Show “AI Agent” language</span>
+      </label>
+      <button id="resetBtn" class="ghost">Reset Demo</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="chat">
+      <div id="messages" class="messages" aria-live="polite"></div>
+      <div class="composer">
+        <input id="input" type="text" placeholder="Type here… (try: 'reset password')" autocomplete="off" />
+        <button id="sendBtn">Send</button>
+      </div>
+      <div class="hint">
+        <span class="pill">Try: reset password</span>
+        <span class="pill">Try: account locked</span>
+        <span class="pill">Try: I forgot my password</span>
+        <span class="pill">Try: night shift approval</span>
+      </div>
+    </section>
+
+    <aside class="panel">
+      <div class="panelHeader">
+        <div class="panelTitle">Audit Trail (Explainable • Traceable • Auditable)</div>
+        <div class="panelDesc">This panel shows what the assistant relied on to guide steps (conceptual).</div>
+      </div>
+      <div id="audit" class="audit"></div>
+      <div class="panelActions">
+        <button id="createTicketBtn" class="secondary">Simulate “Create ServiceNow Ticket”</button>
+        <button id="exportBtn" class="secondary">Export Transcript</button>
+      </div>
+      <div class="disclaimer">
+        <strong>Guardrails:</strong> No autonomous password change, no policy change, no approval bypass.
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <span>Demo purpose: illustrate potential future user experience after Phase 0 readiness work.</span>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+</body>
+</html>

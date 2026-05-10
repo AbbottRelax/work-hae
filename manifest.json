@@ -1,0 +1,9 @@
+{
+  "name": "Password Reset Assistant (Concept Demo)",
+  "short_name": "PwdReset Demo",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#005AAA",
+  "icons": []
+}
