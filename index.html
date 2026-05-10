@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Password Reset Assistant (Concept Demo)</title>
+  <title>AD Login Assistant (Concept Demo)</title>
   <link rel="manifest" href="manifest.json" />
   <meta name="theme-color" content="#005AAA" />
   <link rel="stylesheet" href="styles.css" />
@@ -13,7 +13,7 @@
     <div class="brand">
       <div class="dot"></div>
       <div>
-        <div class="title">Password Reset Assistant</div>
+        <div class="title">AD Login Assistant</div>
         <div class="subtitle">Conceptual AI Agent demo — decision-aware, not executing</div>
       </div>
     </div>
@@ -30,14 +30,14 @@
     <section class="chat">
       <div id="messages" class="messages" aria-live="polite"></div>
       <div class="composer">
-        <input id="input" type="text" placeholder="Type here… (try: 'reset password')" autocomplete="off" />
+        <input id="input" type="text" placeholder="Type here… (try: 'I can't login')" autocomplete="off" />
         <button id="sendBtn">Send</button>
       </div>
       <div class="hint">
+        <span class="pill">Try: I can't login</span>
         <span class="pill">Try: reset password</span>
         <span class="pill">Try: account locked</span>
         <span class="pill">Try: resend OTP</span>
-        <span class="pill">Try: show steps</span>
       </div>
     </section>
 
@@ -52,13 +52,13 @@
         <button id="exportBtn" class="secondary">Export Transcript</button>
       </div>
       <div class="disclaimer">
-        <strong>Guardrails:</strong> No autonomous password change, no policy change, no approval bypass.
+        <strong>Guardrails:</strong> No real password change, no policy change, no approval bypass.
       </div>
     </aside>
   </main>
 
   <footer>
-    <span>Demo purpose: illustrate potential future user experience after Phase 0 readiness work.</span>
+    <span>Demo purpose: visualise a future-state guided experience (no system execution).</span>
   </footer>
 
   <script src="app.js"></script>

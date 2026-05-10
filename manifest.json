@@ -1,6 +1,6 @@
 {
-  "name": "Password Reset Assistant (Concept Demo)",
-  "short_name": "PwdReset Demo",
+  "name": "AD Login Assistant (Concept Demo)",
+  "short_name": "AD Assist",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",
