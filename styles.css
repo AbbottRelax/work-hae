@@ -26,7 +26,7 @@ main{display:grid;grid-template-columns: 1.2fr 0.8fr;gap:12px;padding:12px;max-w
 .audit{padding:12px;height:55vh;overflow:auto;display:flex;flex-direction:column;gap:10px}
 .card{border:1px solid #e5eaf2;border-radius:12px;padding:10px;background:#fbfdff}
 .cardTitle{font-weight:700;font-size:12px;margin-bottom:6px;color:#0b1f33}
-.kv{display:grid;grid-template-columns: 120px 1fr;gap:6px;font-size:12px;color:#2b4258}
+.kv{display:grid;grid-template-columns: 140px 1fr;gap:6px;font-size:12px;color:#2b4258}
 .k{color:#5b728a}
 .panelActions{display:flex;gap:8px;padding:10px;border-top:1px solid #e5eaf2}
 .secondary{flex:1;padding:10px 12px;border-radius:10px;border:1px solid #d6dee8;background:#fff;cursor:pointer;font-weight:600;color:#274057}
